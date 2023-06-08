@@ -4,6 +4,9 @@ M.disabled = {
   n = {
     ["<leader>wk"] = "",
   },
+  i = {
+    ["<C-j>"] = "",
+  },
 }
 
 M.abc = {

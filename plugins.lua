@@ -8,9 +8,24 @@ return {
   },
   {
     "tpope/vim-fugitive",
+    lazy = false,
   },
   {
-    "nvim-tree/nvim-web-devicons",
+    "nvim-telescope/telescope.nvim",
+    lazy = false,
+    opts = {
+      defaults = {
+        mappings = {
+          n = {
+            ["<leader>sf"] = { "<cmd>Telescope find_files<cr>" },
+            ["<leader><ljader>"] = { "<cmd>Telescope find_buffers<cr>" },
+            ["<leader>sb"] = { "<cmd>Telescope git_branches<cr>" },
+            ["<leader>gc"] = { "<cmd>Telescope git_commits<cr>" },
+            ["<leader>sg"] = { "<cmd>Telescope live_grep<cr>" },
+          },
+        },
+      },
+    },
   },
   {
     "nvim-treesitter/nvim-treesitter",
