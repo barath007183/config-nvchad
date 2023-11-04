@@ -11,22 +11,17 @@ return {
     lazy = false,
   },
   {
+    "whatyouhide/vim-gotham",
+  },
+  {
+    "memgraph/cypher.vim",
+  },
+  { "echasnovski/mini.surround", version = "*", lazy = false },
+  {
     "nvim-telescope/telescope.nvim",
     lazy = false,
-    opts = {
-      defaults = {
-        mappings = {
-          n = {
-            ["<leader>sf"] = { "<cmd>Telescope find_files<cr>" },
-            ["<leader><ljader>"] = { "<cmd>Telescope find_buffers<cr>" },
-            ["<leader>sb"] = { "<cmd>Telescope git_branches<cr>" },
-            ["<leader>gc"] = { "<cmd>Telescope git_commits<cr>" },
-            ["<leader>sg"] = { "<cmd>Telescope live_grep<cr>" },
-          },
-        },
-      },
-    },
   },
+  { "akinsho/git-conflict.nvim", version = "*", config = true, lazy = false },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
