@@ -7,6 +7,7 @@ local sources = {
    formatting.prettier,
    formatting.stylua,
    formatting.black,
+   formatting.isort,
 
    lint.shellcheck,
    lint.ruff,
